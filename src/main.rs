@@ -16,7 +16,7 @@ fn get_val(index: i32) -> &'static str {
     }
 
     let sub_index = index - closest_pow2(index);
-    return comp(get_val(sub_index));
+    comp(get_val(sub_index))
 }
 
 fn comp(x: &str) -> &str {
